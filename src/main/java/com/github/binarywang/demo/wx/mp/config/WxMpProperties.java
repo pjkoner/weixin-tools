@@ -41,6 +41,6 @@ public class WxMpProperties {
 
     @Override
     public String toString() {
-        return JsonUtils.toJson(this);
+        return JsonUtils.toJson(this).toJSONString();
     }
 }

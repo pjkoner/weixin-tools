@@ -51,7 +51,8 @@ public class SubscribeHandler extends AbstractHandler {
         }
 
         try {
-            return new TextBuilder().build("感谢关注", wxMessage, weixinService);
+
+            return new TextBuilder().build("感谢你的关注,可以发送图片，将背景置灰。向英雄致敬！", wxMessage, weixinService);
         } catch (Exception e) {
             this.logger.error(e.getMessage(), e);
         }

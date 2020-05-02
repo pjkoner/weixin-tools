@@ -2,8 +2,10 @@ package com.github.binarywang.demo.wx.mp.config;
 
 import com.github.binarywang.demo.wx.mp.handler.*;
 import lombok.AllArgsConstructor;
+import me.chanjar.weixin.mp.api.WxMpMaterialService;
 import me.chanjar.weixin.mp.api.WxMpMessageRouter;
 import me.chanjar.weixin.mp.api.WxMpService;
+import me.chanjar.weixin.mp.api.impl.WxMpMaterialServiceImpl;
 import me.chanjar.weixin.mp.api.impl.WxMpServiceImpl;
 import me.chanjar.weixin.mp.config.impl.WxMpDefaultConfigImpl;
 import org.springframework.boot.context.properties.EnableConfigurationProperties;

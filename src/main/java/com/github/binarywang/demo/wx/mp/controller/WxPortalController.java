@@ -58,10 +58,10 @@ public class WxPortalController {
     @PostMapping(produces = "application/xml; charset=UTF-8")
     public String post(@PathVariable String appid,
                        @RequestBody String requestBody,
-                       @RequestParam("signature") String signature,
-                       @RequestParam("timestamp") String timestamp,
-                       @RequestParam("nonce") String nonce,
-                       @RequestParam("openid") String openid,
+                       @RequestParam(name = "signature", required = false) String signature,
+                       @RequestParam(name = "timestamp", required = false) String timestamp,
+                       @RequestParam(name = "nonce", required = false) String nonce,
+                       @RequestParam(name = "openid", required = false) String openid,
                        @RequestParam(name = "encrypt_type", required = false) String encType,
                        @RequestParam(name = "msg_signature", required = false) String msgSignature) {
         log.info("\n接收微信请求：[openid=[{}], [signature=[{}], encType=[{}], msgSignature=[{}],"
